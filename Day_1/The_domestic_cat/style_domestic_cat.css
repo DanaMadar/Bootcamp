@@ -1,0 +1,68 @@
+*{
+	box-sizing: border-box;
+}
+
+header{
+	font-size: 3em;
+	margin-top: 10px;
+	border-bottom: 1px sold black;
+}
+
+h1{
+	font-size: large;
+}
+
+li{
+	margin-left: 50px;
+}
+
+.div1{
+	display: flex;
+	justify-content: center;
+}
+
+img{
+	border: 5px solid orange;
+	height: 250px;
+	width: 350px;
+}
+
+div{
+	display: flex;
+	justify-content: center;
+}
+th{
+	border: 1px solid red;
+}
+
+td{
+	border: 1px solid red;
+}
+.cats{
+	text-decoration: underline;
+}
+
+.house_cat{
+	font-family: cursive;
+}
+
+.companionship{
+	font-weight: bold;
+}
+
+.breeds{
+	background-color: yellow;
+}
+
+.media{
+	display: flex;
+	justify-content: center;
+}
+
+.behavior{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	color: red;
+	border: 1px solid red;
+}

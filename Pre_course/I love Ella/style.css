@@ -1,0 +1,44 @@
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+}
+
+*{
+	text-align: left;
+}
+
+body{
+	background-image: url();
+	background-size: cover;
+	cursor: pointer;
+}
+
+h1{
+	font-style: oblique;
+	font-size: 3em;
+	border-bottom: 2px solid lightcoral;
+	width: 400px;
+	text-align: center;
+	box-shadow: 4px 4px 5px #888888;
+}
+
+ul{
+	border-bottom: 1px solid lightcoral;
+	align-content: left;
+	justify-content: left;
+	font-size: 150%;
+}
+
+img{
+
+	float: center;
+	justify-content: left;
+	margin: 10px;
+	transition: all 1s;
+}
+
+img:hover{
+	transform: scale(1.1);
+	justify-content: left;
+}

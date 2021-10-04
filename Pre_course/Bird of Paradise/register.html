@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>register</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<a href= "index.html">Go back</a><br>
+	<!-- use GET not POST  -->
+	<div>
+		<form method="GET">
+			First name: <input type="text" name="firstname"><br>
+			Last name: <input type="text" name="lastname"><br>
+			E-mail: <input type="email" required name="email"><br>
+			Password: <input typpe="password" name="password" min="5"><br>
+			Birthday: <input type="date" name="date"><br>
+			Gender:<br>
+			<input type="radio" name="gender" value="male">Male<br>
+			<input type="radio" name="gender" value="female">Female<br>
+			<input type="radio" name="gender" value="other">Other<br>
+			Pets:<br>
+			<input type="checkbox" name="cat"> Cat<br>
+			<input type="checkbox" name="dog"> Dog<br>
+			<input type="checkbox" name="pinguin"> Pinguin<br>
+			Cars:<br>
+			<select name="cars">
+				<option value="Volvo">Volvo</option>
+				<option value="Audi">Audio</option>
+				<option value="Fuck cars, I ride a bicycle">Fuck cars, I ride a bicycle</option>
+			</select><br>
+			<input type="submit" value="register">
+			<input type="reset">
+		</form>
+	</div>
+</body>
+</html>

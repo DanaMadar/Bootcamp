@@ -1,0 +1,70 @@
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+}
+
+*{
+	text-align: left;
+}
+
+body{
+	background-image: url(https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
+	background-size: cover;
+	cursor: pointer;
+}
+
+a {
+	color: antiquewhite;
+	display: inline-block;
+}
+
+h1{
+	color: rgba(198, 197, 2, 1.0);
+	text-align: center;
+	border: 4px solid rgba(198, 197, 2, 0.5);
+	font-family: 'Raleway', sans-serif;
+}
+
+li{
+	color: antiquewhite;
+	text-align: left;
+	font-size: 150%;
+}
+
+p{
+	color: floralwhite;
+	line-height: 2;
+	font-style: italic;
+	font-family: "Georga", "Times New Roman";
+}
+
+img: hover{
+	transform: scale(1.1);
+	transition: 1s;
+}
+
+img{
+	float: center;
+	clear: both;
+}
+
+form{
+	color: antiquewhite;
+}
+
+.webtext {
+	border: 1px dashed lightyellow;
+}
+
+.active {
+	color: lightgoldenrodyellow;
+}
+
+#div1{
+	background: rgba(226, 64, 0, 0.4);
+}
+
+#div2{
+	background: rgba(198, 197, 2, 0.4);
+}

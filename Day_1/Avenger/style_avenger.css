@@ -1,0 +1,53 @@
+body{
+	background-image: url(https://nerdist.com/wp-content/uploads/2017/07/7b17583f76810ced4b203c2c8c614c65.jpg);
+	background-size: cover;
+	cursor: pointer
+	margin: 0px;
+	position: relative;
+}
+
+ul {
+  	margin: -1;
+  	padding: 200px;
+	display: inline;
+}
+
+li{
+	display: inline;
+	background-color: rgba(255, 0, 0, 0.6);
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: large;
+	padding-top: 20px;
+}
+
+.WW{
+	font-size: 40px;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding-right: 80%;
+}
+
+h1{
+	margin-top: 50px;
+	/*margin-bottom: 350px;*/
+	font-size: 100px;
+	font-stretch: expanded;
+	font-family: sans-serif;
+	color: red;
+}
+
+section{
+	position: relative;
+}
+
+article{
+	color: black;
+	width: 100%;
+	position: absolute;
+	bottom: o;
+	left: 0;
+	margin-top: 300px;
+	font-size: 40px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
