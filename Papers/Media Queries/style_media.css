@@ -1,0 +1,61 @@
+
+/* First Demontration*/
+
+section.first_demo_section{
+	background-color:pink;
+	padding: 10px;
+}
+
+img.first_demo_img{
+	width: 100px; 
+	height: 100px;
+	margin: 10px; 
+}
+
+img.first_img{
+	float:left;
+}
+
+
+img.second_image{
+	float:right;
+}
+
+p.first_demo_p{
+	border:1px solid blue; 
+	padding: 10px;
+	text-align: justify
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+
+	section.first_demo_section{
+		background-color:lightblue;
+	}
+
+	img.first_demo_img{
+		width: 200px; 
+		height: 200px;
+	}
+}
+
+
+@media all and (min-width: 480px) and (max-width: 768px){
+
+	section.first_demo_section{
+		background-color:lightgreen;
+	}
+
+	img.first_demo_img{
+		display: block;
+		width: 100%;
+		height: auto;
+		float:none;
+		margin: auto; 
+		margin-top: 20px;
+		margin-bottom: 20px
+	}
+
+}
+

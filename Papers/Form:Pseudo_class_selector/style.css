@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Dancing Script', cursive;
+  line-height: 2.6;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+body{
+  background-image: linear-gradient(to right, #e6dae8, #eccbf2);
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3 {
+  font-size: 3rem;
+  text-align:  center;
+}
+
+form {
+  margin: 50px auto;
+  padding: 10px 15px 45px 15px;
+  text-align:  center;
+  border: 1px solid #eaeaea;
+  width: 50%;
+  background-color:  lightgrey;
+}
+
+label{
+  font-size: 3rem;
+}
+
+input, select {
+  font-family: 'Dancing Script', cursive;
+  padding: 0.5rem;
+  margin:  1.5rem;
+  border-radius:10px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e4;
+  font-size: 2rem ;
+  margin: 0;
+  width: 100%;
+  outline: none;
+}
+
+/*CSS [attribute] Selector*/
+/*https://www.w3schools.com/css/css_attribute_selectors.asp*/
+
+input[type="checkbox"]:not(:checked) + label{
+  color: white;
+  border-bottom: 2px groove black;
+}
+
+/*------------------------*/
+
+/* Pseudo class selectors */
+/* https://css-tricks.com/pseudo-class-selectors/ */
+
+/*Pseudo class selectors are CSS 
+selectors with a colon preceding them*/
+
+form:hover {
+  box-shadow: 5px 10px #888888;
+  /*outline: 0;*/
+} 
+
+
+input:focus {
+  /*outline: none;*/
+  background-color: lightblue
+}
+
+input:required {
+  border:1px solid red;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+
+.radio_form > input:checked + label {
+  color: blue;
+}
+
+.radio_form > input:not(:checked) + label {
+  color: red;
+}
+
+/*----------------*/
+
+/*Position/Number-based pseudo class selectors*/
+
+
+div h2:first-child {
+  color: blue;
+}
+
+
+div h3:nth-child(3) {
+  color: red;
+} 

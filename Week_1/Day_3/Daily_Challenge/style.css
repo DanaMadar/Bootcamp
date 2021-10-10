@@ -1,0 +1,42 @@
+body{
+	margin: 2v;
+	height: 500px;
+	width: 600px;
+	display: flex;
+}
+
+div{
+	display: flex;
+	border: 3px solid black; 
+    height: 400px;
+    width: 500px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column1{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.column2{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.box{
+	width: 30px;
+	height: 30px;
+	border: 2px solid black;
+	margin: 10px;
+	background-color: yellow;
+}

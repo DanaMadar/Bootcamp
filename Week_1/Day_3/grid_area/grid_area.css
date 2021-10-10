@@ -1,0 +1,61 @@
+.sectiongridarea{
+    border: 1px solid black;
+    padding:  5px;
+    width: 40vw;
+    height: 90vh;
+    background-color: gainsboro;
+    display: grid;
+    grid-gap: 3px 3px;
+    grid-template-rows: repeat(9,1fr);
+    grid-template-columns: repeat(3,1fr);
+
+    grid-template-areas:
+    "header header header"
+    "hero main main"
+    "hero main main"
+    "sidebar main main"
+    "sidebar extra extra"
+    "sidebar extra extra"
+    "img img post"
+    "img img post"
+    "footer footer footer"
+}
+
+.bluebox {
+    grid-area : header;
+    background-color: blue;
+}
+
+.purplebox {
+    grid-area : hero;
+    background-color: purple;
+}
+
+.yellowbox {
+    grid-area : main;
+    background-color: yellow;
+}
+
+.lightgreenbox {
+    grid-area : sidebar;
+    background-color: lightgreen;
+}
+
+.greybox {
+    grid-area : extra;
+    background-color: grey;
+}
+
+.greenbox {
+    grid-area : img;
+    background-color: green;
+}
+
+.pinkbox {
+    grid-area : post;
+    background-color: pink;
+}
+.orangebox {
+    grid-area : footer;
+    background-color: orange;
+}

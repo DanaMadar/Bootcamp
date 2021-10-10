@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-- Form -->
+  <!-- The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together. -->
+    <!-- used to reference the element in a JavaScript. -->
+    <!-- https://www.w3schools.com/html/html_form_input_types.asp -->
+    <section class="first_container">
+
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="u_name" required>
+        <label for="user_pass">Password:</label>
+        <input type="password" id="user_pass" name="u_pass">
+      </form>
+
+    </section>
+
+    <hr>
+
+    <!-- Form Radio Buttons -->
+    <h3>Favorite animal</h3>
+    <form class="radio_form">
+
+      <input type="radio" id="cat" name="pet" value="cat" checked>
+      <label for="cat">Cat</label><br>
+      
+      <input type="radio" id="dog" name="pet" value="dog">
+      <label for="Dog">Dog</label><br>
+      
+      <input type="radio" id="other" name="pet" value="other">
+      <label for="other">Other</label>
+
+    </form><hr>
+
+
+    <form>
+
+      <input type="checkbox" name="my-checkbox-in" id="check_in">
+      <label for="check_in">Check In!</label>
+
+      <input type="checkbox" name="my-checkbox-out" id="check_out">
+      <label for="check_out">Check Out!</label>
+
+    </form><hr>
+
+    <form>
+
+      <select name="select_fruits" id="fruit">
+        <option value="apples">Apples</option>
+        <option value="grapes">Grapes</option>
+        <option value="pears">Pears</option>
+      </select>
+
+    </form><hr>
+
+
+    <div>
+      <h2>Hello H2</h2>
+      <h2>Hello H2 - second child</h2>
+      <h3>Hello H3 - third child</h3>
+    </div>
+
+  </body>
+
+  </html>
+
+

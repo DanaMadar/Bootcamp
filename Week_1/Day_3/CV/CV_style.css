@@ -1,0 +1,49 @@
+body{
+	margin: 2v;
+	height: 40px;
+	font-family: 'Actor';font-size: 22px;
+}
+
+.sec1{
+	display: flex;
+	height: 300px;
+	margin: 10v;
+	justify-content: space-between;
+	flex-direction: column;
+	align-content: flex-start;
+}
+
+.contact{
+	justify-items: flex-start;
+	flex-grow: 3;
+	align-content: center;
+	font-size: 3em;
+	text-align: center;
+}
+
+img{
+	display: flex;
+	height: 30vh;
+	width: 47vw;
+	margin-top: 0vh;
+	margin-left: 2vh;
+	margin-bottom: 2vh;
+}
+
+.con{
+	display: flex;
+	border-bottom: 3px solid darkgreen;
+}
+
+a{
+	display: flex;
+	text-align: right;
+	margin: 5vw;
+	margin-left: 5vw;
+}
+
+.box{
+	width: 47vw;
+	border-bottom: 1px solid darkgreen;
+	margin: 10px;
+}

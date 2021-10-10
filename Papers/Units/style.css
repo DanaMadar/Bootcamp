@@ -1,0 +1,94 @@
+html {
+	font-size:  10px;
+}
+
+* {
+	box-sizing: border-box;
+
+}
+
+div {
+	border : 10px solid;
+	margin:  10px;
+}
+
+
+section {
+	border : 1px solid black;
+	margin:  10px;
+}
+
+/* PX */
+
+.pixels {
+	width:  200px;
+	height: 60px;
+	border-color: pink;
+}
+
+/* VW */
+
+.viewport{
+	width:  20vw;
+	border-color: skyblue;
+}
+
+/* % */
+
+.wrap {
+	width: 500px;
+}
+
+.percent {
+	width:  50%;
+	border-color: seagreen;
+}
+
+/* EM */
+
+.wrap_em{
+	font-size: 30px;
+}
+
+.em {
+	font-size: 1.6em;
+	border : 1px solid black;
+}
+
+.rem {
+	font-size: 1.6rem;
+}
+
+/*unit*/
+
+.wrap_em_unit{
+	font-size: 30px;
+	background-color:  yellowgreen;
+}
+
+.work {
+	/*depends on the font-size of the root*/
+	/*consistent*/
+	margin: 1rem auto;
+	/*depends on the font-size of the element*/
+	padding: 1.2em 1.8em;
+	width: fit-content;
+	display: inline-block;
+}
+
+.em_unit{
+	font-size: 1.6em;
+	background-color :  pink;
+}
+
+.em_unit_small{
+	font-size: 0.5em;
+	background-color :  aquamarine;
+}
+
+@media all and (max-width: 800px){
+	.wrap_em_unit{
+		font-size: 15px;
+		background-color:  yellow;
+	}
+}

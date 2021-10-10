@@ -1,0 +1,94 @@
+
+#fix_sti {
+    background-color: lightpink;
+}
+
+#rel_abs {
+    background-color: lightskyblue;
+}
+
+/* ---------------- */
+/*position : fixed*/
+
+
+header {
+    overflow: scroll;
+    height: 200px;
+    margin-top:  70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+nav {
+    font-weight:  bold;
+    width: 100%;
+}
+
+.firstnav{
+    background-color: limegreen;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: .85;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+/* ---------------- */
+/*position : sticky*/
+
+.secondnav{
+    background-color: skyblue;
+    height: 50px;
+    position: sticky;
+    top:30px;
+}
+
+/*-------------------*/
+/* position : relative*/
+
+li {
+    list-style-type: none;
+}
+
+.secondnav li {
+    display: inline-block;
+    margin: 3px;
+    padding: 3px;
+}
+
+li.profile {
+    position: relative;
+    left: 40px;
+    top: 10px;
+    background-color: yellow;
+}
+
+
+/*--------------------*/
+/* position : absolute */
+/* The element is positioned 
+relative to its first positioned (not static) ancestor element*/
+
+section {
+    border: 3px solid red;
+    margin : 20px;
+    padding: 20px;
+    /*position:relative*/
+}
+
+.coding{
+    background-color: lightseagreen;
+    position:absolute;
+    top: 0px;
+    left: 30px;
+}
+
+
+.abs {
+    background-color: greenyellow;
+}
+
+
