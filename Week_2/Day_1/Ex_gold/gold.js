@@ -12,6 +12,6 @@ console.log(`${str2}, ${str1}`);
 
 // Ex3
 
-num1 = 33
-num2 = parseInt(prompt("Please type in a number"));
-sum = alert(num1 + num2);
+num1 = parseInt(prompt("Please type in a number"));
+num2 = parseInt(prompt("Please type in a an other number"));
+sum = alert("The sum  is: " + (num1 + num2));

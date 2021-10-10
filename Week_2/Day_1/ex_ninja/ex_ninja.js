@@ -1,8 +1,22 @@
 //ex_1
 sentence_user = prompt("Write a sentence inclueding 'Nemo'");
-sentence_user2 = sentence_user.indexOf("Nemo");
+sentence_array= sentence_user.split(" ");
+console.log(sentence_array);
+position = sentence_array.indexOf("Nemo");
+console.log("I found Nemo at position ", position)
 
-console.log("I found Nemo at position ", sentence_user2)
+
+//ex2
+// 1. 23, 2.undefined, 3. 75
+
+//ex3
+let num = prompt("Give me a list of 2 numbers and seperate them by ',' ");
+let array = num.split(",");
+sp_arr = parseInt((array[0]));
+sp_arr2 = parseInt((array[1]));
+let sum = sp_arr + sp_arr2
+alert(sum);
+
 
 //ex4
 let explosion = "boooooooooom";
