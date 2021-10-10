@@ -1,10 +1,17 @@
-let pets = ["cat", "dog", "fish", "rabbit", "cow"];
-let userPet = prompt("give me a new pet");
-pets.push(userPet)
-console.log("the last pet is: ", pets[pets.length-1])
+// Ex1
+
+let aboutMe =["I", "have", "two", "cats"]
+console.log(aboutMe)
 
 
-let age = parseInt(prompt("what is your age"));
+// Ex2
 
-pets.splice(2, 0, 'dolphin', 'rats')
-console.log(pets)
+let str1 = "mix";
+let str2 = "pod";
+console.log(`${str2}, ${str1}`);
+
+// Ex3
+
+num1 = 33
+num2 = parseInt(prompt("Please type in a number"));
+sum = alert(num1 + num2);
