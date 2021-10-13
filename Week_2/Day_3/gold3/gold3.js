@@ -13,9 +13,21 @@ let building = {
         "David": [1, 500],
     },
 }
-coun= 0;
+console.log(building["numberLevels"]);
+console.log(building["numberOfAptByLevel"]["1"]);
+console.log(building["numberOfRoomsAndRent"]["Dan"][0]);
 
-while (count< 6) {
-    count += 1;
-    console.log(building[numberLevels]);
+let key = Object.keys(building["numberOfRoomsAndRent"]);
+rentDan= rent.slice(1, 2);
+for ("dan" in 
+
+if (rentDan < rent) {
+    rentDan += 500;
 }
+
+console.log(rentDan);
+
+// const student = prompt('please enter your name:').toLowerCase();
+// const keys = Object.keys(guestList), index = keys.indexOf(student);
+// console.log(index === -1 ? `Hi! I'm a guest.` :
+//   `Hi! I'm ${keys[index]}, and I'm from ${guestList[student]}.`);
