@@ -8,3 +8,5 @@ list.forEach(e => {
 console.log('*'.repeat(longest + 4));
 list.forEach(e => console.log(`* ${e}${' '.repeat(longest - e.length)} *`))
 console.log('*'.repeat(longest + 4));
+
+
