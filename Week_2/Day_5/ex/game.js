@@ -1,4 +1,4 @@
-alert("Explanation of the game : the point of the game is to guess the number that the computer has in “mind”.");
+//("Explanation of the game : the point of the game is to guess the number that the computer has in “mind”.");
 
 
     
@@ -25,19 +25,16 @@ let computerNumber = Math.floor(Math.random() * 11);
 function test (userNumber,computerNumber) {
     for (let i = 0; i<2; i++){
         if (userNumber>computerNumber){
-            alert("Your number is bigger then the computer’s, guess again");
-            enterNumber();
+            userNumber = Number(prompt("Your number is bigger then the computer’s, guess again"));
             continue;
         } else if (userNumber<computerNumber){
-            alert("Your number is smaller then the computer’s, guess again")
-            enterNumber();
+            userNumber = Number(prompt("Your number is smaller then the computer’s, guess again"));
             continue;
-        }else if (userNumber==computerNumber) {
+        } else if ( userNumber== undefined){
+            break;
+        }else {
             alert("WINNER!");
-        } else{
-            (i === 2)
-        alert("out of chances");
-        }
+        }alert("out of chances");
     }
 }
 test(userNumber,computerNumber)
