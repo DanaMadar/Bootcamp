@@ -1,3 +1,4 @@
+//ex1
 let building = {
     numberLevels : 4,
     numberOfAptByLevel : {
@@ -26,3 +27,26 @@ if (rentDan < rentSD) {
 
 console.log(rentDan);
 
+//ex2
+let numbers = [123, 8409, 100053, 333333333, 7];
+numbers.forEach(function(e) {
+    e = (e%3==0);
+    console.log(e);
+})
+
+//ex3
+let age = [20,5,12,43,98,55];
+let sum = 0;
+for (let i = 0; i<age.length; i++){
+   sum +=age[i];
+}
+console.log(sum);
+
+let max = 0;
+
+for (var i = 0; i < age.length; i++) {
+    if (age[i]> max) {
+        max = age[i];
+    }
+}
+console.log(max);
