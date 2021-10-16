@@ -26,15 +26,21 @@ function test (userNumber,computerNumber) {
     for (let i = 0; i<2; i++){
         if (userNumber>computerNumber){
             userNumber = Number(prompt("Your number is bigger then the computer’s, guess again"));
+            if (i == 1){
+                alert("out of chances");
+            } else{
             continue;
+            }
         } else if (userNumber<computerNumber){
             userNumber = Number(prompt("Your number is smaller then the computer’s, guess again"));
+            if (i == 1){
+                alert("out of chances");
+            } else{
             continue;
-        } else if ( userNumber== undefined){
-            break;
+            }
         }else {
             alert("WINNER!");
-        }alert("out of chances");
+        }
     }
 }
 test(userNumber,computerNumber)
