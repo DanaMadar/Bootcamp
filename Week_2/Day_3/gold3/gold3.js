@@ -17,17 +17,12 @@ console.log(building["numberLevels"]);
 console.log(building["numberOfAptByLevel"]["1"]);
 console.log(building["numberOfRoomsAndRent"]["Dan"][0]);
 
-let key = Object.keys(building["numberOfRoomsAndRent"]);
-rentDan= rent.slice(1, 2);
-for ("dan" in 
-
-if (rentDan < rent) {
-    rentDan += 500;
+let rent = Object.values(building["numberOfRoomsAndRent"]);
+rentDan = rent[1].slice(1, 2);
+rentSD = parseInt(rent[0].slice(1, 2))+parseInt(rent[2].slice(1, 2));
+if (rentDan < rentSD) {
+    rentDan = 1200;
 }
 
 console.log(rentDan);
 
-// const student = prompt('please enter your name:').toLowerCase();
-// const keys = Object.keys(guestList), index = keys.indexOf(student);
-// console.log(index === -1 ? `Hi! I'm a guest.` :
-//   `Hi! I'm ${keys[index]}, and I'm from ${guestList[student]}.`);
