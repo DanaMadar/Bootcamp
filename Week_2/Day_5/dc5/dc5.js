@@ -10,7 +10,7 @@ let counter = 1;
 
 while (counter<=userNumber){
     if (userNumber==1){
-        console.log(`1 bottles of beer on the wall\n1 bottles of beer on the wall\n1 bottles of beer\nTake 1 down, pass it around`);
+        console.log(`1 bottle of beer on the wall\n1 bottle of beer on the wall\n1 bottle of beer\nTake 1 down, pass it around`);
     }else
     console.log(`${userNumber} bottles of beer on the wall\n${userNumber} bottles of beer on the wall\n${userNumber} bottles of beer\nTake ${counter} down, pass them around`);
     counter++
