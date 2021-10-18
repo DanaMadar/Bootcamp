@@ -70,3 +70,38 @@ function changeColor(event) {
 // 	let colorButton = event.target.textContent.toLowerCase();
 // 	bodyElement.style.backgroundColor = colorButton;
 // }
+
+// let bookForm = document.forms[0]; //select by index
+let bookForm = document.forms['add-book'] //select by id
+
+// console.log(bookForm)
+// console.log("elements", bookForm.elements.title)
+
+bookForm.addEventListener("submit", addBook)
+
+let div = document.getElementById("container")
+
+function addBook (event) {
+	event.preventDefault();
+	let inputTitle = event.target.elements.title
+	let inputAuthor = event.target.elements.author
+
+	let titleValue = inputTitle.value;
+	let authorValue = inputAuthor.value;
+
+	let pOne = document.createElement("p")
+	let pTwo = document.createElement("p")
+	let textOne = document.createTextNode(titleValue)
+	let textTwo = document.createTextNode(authorValue)
+
+
+	pOne.appendChild(textOne)
+	pTwo.appendChild(textTwo)
+
+	div.appendChild(pTwo)
+	div.appendChild(pOne)
+
+	inputTitle.value = "";
+	inputAuthor.value = ""
+	 
+}
