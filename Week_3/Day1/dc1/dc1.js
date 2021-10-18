@@ -1,11 +1,10 @@
 let planets = 'Mercury,Venus,Earth,Mars,Jupiter,Saturn,Uranus,Neptune'.split(',');
-for (let x in planets) {
+for (let x of planets) {
     let div = document.createElement('div');
-    div.id = planets[x];
+    div.id = x;
     div.className = "planet";
-    div.innerHTML = planets[x];
+    div.innerHTML = x;
     document.body.appendChild(div);
-
 }
 
 document.getElementById("Mercury").style.backgroundColor="red"
