@@ -11,19 +11,22 @@ btn.addEventListener("click", function (){
 	if (inputValue === ""){
 		alert("your input is invalid")
 	}
-	let placeValue = inputValue.place.value
+	let place = inputValue.place.value
     let ing = "ing "
-    let newVerb = inputValue.verb.value + ing
+    let verb = inputValue.verb.value + ing
     let name = inputValue.person.value
+	let noun = inputValue.noun.value
+	let adj = inputValue.adjective.value
 	
 
 
     let story = document.getElementById("story")
-    story.innerHTML=`This is the story of ${name} and the ${inputValue.adjective.value} ${inputValue.noun.value} that is ${newVerb} in ${placeValue}`
+	story.innerHTML=`This is a story about ${name} who likes ${verb} in ${place} to find a ${adj} ${noun} behind buildins.`
+    //story.innerHTML=`This is a story about ${name} and the ${adj} ${noun} that is ${verb} in ${place}`
 })
 
 let verbD = document.getElementById("verb").defaultValue="walk"
 let nounD = document.getElementById("noun").defaultValue="cat"
 let placeD = document.getElementById("place").defaultValue="Zurich"
-let adjectiveD = document.getElementById("adjective").defaultValue="brown"
+let adjectiveD = document.getElementById("adjective").defaultValue="stinky"
 let personD = document.getElementById("person").defaultValue="Ella"
