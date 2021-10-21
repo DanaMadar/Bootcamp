@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+
+}
+
+#secLeft{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: 1px solid black;
+    width: 25vw;
+    height: 90vh;
+    background-color: rgb(236, 228, 228);
+}
+
+#btn{
+    display: grid;
+    grid-column: span 3;
+    width: 20vw;
+    margin: 1vh 1vw;
+}
+
+#secRight{
+    display: grid;
+    border: 1px solid black;
+    width: 75vw;
+    height: 90vh;
+    grid-template-columns: repeat(60, 1fr);
+    grid-template-rows: repeat(24, 1fr)
+}
+
