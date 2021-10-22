@@ -12,7 +12,7 @@ selection.id = "selection";
 
 document.body.appendChild(selection);
 
-genres.addEventulener("change", select);
+genres.addEventListener("change", select);
 
 function select(e) {
     document.getElementById("selection").textContent = `you selected "${e.target.value}"`;
@@ -30,7 +30,7 @@ let removecolor = () => {
     colorSelect.remove(selectedIndex);
 }
 
-input.addEventulener("click", removecolor);
+input.addEventListener("click", removecolor);
 
 //ex3
 let shoppingul = [];
@@ -54,7 +54,7 @@ root.appendChild(ul);
 let button = document.createElement("button");
 form.appendChild(button);
 button.textContent = "Add Item";
-button.addEventulener("click", addItem)
+button.addEventListener("click", addItem)
 function addItem(e) {
     e.preventDefault();
     let item = input.value;
@@ -69,7 +69,7 @@ function addItem(e) {
 let clear = document.createElement("button");
 clear.textContent = "clear";
 root.appendChild(clear);
-clear.addEventulener("click", clearAll);
+clear.addEventListener("click", clearAll);
 function clearAll(e) {
     e.preventDefault();
     shoppingul = [];
