@@ -119,10 +119,14 @@
 # print(final)
 
     
-#13
+#13/14
 
-sandwich_orders = ["tuna sandwich", "cheese sandwich", "vegan sandwich"]
+sandwich_orders = ["tuna sandwich", "cheese sandwich", "vegan sandwich","pastrami sandwich", "pastrami sandwich", "pastrami sandwich"]
 finished_sandwiches = []
+print("the deli has run out of pastrami")
+
+while "pastrami sandwich" in sandwich_orders:
+    sandwich_orders.remove("pastrami sandwich")
 
 for san in sandwich_orders:
     finished_sandwiches.append(san)
