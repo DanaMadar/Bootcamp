@@ -13,7 +13,7 @@ candles = age % 10
 
 i = "i" * candles
 
-num = "_" * ((12 - candles) // 2)
+num = "_" * ((12 - candles) // 2) # durch 2 ohne Rest für beide 2 Seiten
 top = (f"    {num}{i}{num}\n")
 bottem = ("  |:H:a:p:p:y:|\n __|___________|__\n|^^^^^^^^^^^^^^^^^|\n|:B:i:r:t:h:d:a:y:|\n|                 |\n~~~~~~~~~~~~~~~~~~~")
 print(top, bottem)
