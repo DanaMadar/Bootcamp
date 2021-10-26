@@ -32,4 +32,4 @@ user_name = input("type in a name: ")
 
 for same in names:
     if same == user_name:
-        print(f"the user name is {same}, and the index is {names.index(same).}")
+        print(f"the user name is {same}, and the index is {names.index(same)}.")
