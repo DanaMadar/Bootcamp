@@ -15,7 +15,7 @@ while choice != "encrypt" or "decrypt":
         alphabet2 = {key+shift: value for (key, value) in alphabet.items()}
         alphabet_update = {key-26: value for (key, value) in alphabet2.items() if key > 26}
 
-        encryption_text = input("write a sentence you want to encrypt: ")
+        encryption_text = input("write a sentence you want to encrypt: ").lower
         for letter in encryption_text:
             decryption_text += chr(ord(letter) + shift)
         print(decryption_text)
@@ -32,3 +32,5 @@ while choice != "encrypt" or "decrypt":
             encryption_text += chr(ord(letter) - shift)
         print(encryption_text)
         break
+
+

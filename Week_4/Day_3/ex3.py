@@ -64,31 +64,31 @@
 # print(brand["number_stores"])
 
 #ex4
-users = ["Mickey", "Minnie", "Donald","Ariel","Pluto"]
-d = {}
-d1 = {}
-d2 = {}
-d3 = {}
-d4 = {}
+# users = ["Mickey", "Minnie", "Donald","Ariel","Pluto"]
+# d = {}
+# d1 = {}
+# d2 = {}
+# d3 = {}
+# d4 = {}
 
-for keys, values in enumerate(users):
-    d[values] = keys  
+# for keys, values in enumerate(users):
+#     d[values] = keys  
 
-for values, keys in enumerate(users):
-    d1[values] = keys  
+# for values, keys in enumerate(users):
+#     d1[values] = keys  
 
-for keys, values in enumerate(sorted(users)):
-    d2[values] = keys  
-
-
-for values, keys in enumerate(users):
-    if "i" in keys:
-        d3[values] = keys  
+# for keys, values in enumerate(sorted(users)):
+#     d2[values] = keys  
 
 
-for values, keys in enumerate(d1):
-    if keys.startswith("M"):
-        d4[values] = keys  
-    if keys.startswith("P"):
-        d4[values] = keys  
-print(d4)
+# for values, keys in enumerate(users):
+#     if "i" in keys:
+#         d3[values] = keys  
+
+
+# for values, keys in enumerate(d1):
+#     if keys.startswith("M"):
+#         d4[values] = keys  
+#     if keys.startswith("P"):
+#         d4[values] = keys  
+# print(d4)
