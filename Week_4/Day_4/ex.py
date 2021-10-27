@@ -65,9 +65,10 @@ def show_magicians():
         print(magician)
 
 def make_great():
-    for magician in magicians:
-        print(f"The Great {magician}")
-
+    for i in range(0, len(magicians)):
+        magicians[i] += "The Great"
+    return magicians
+    
 magicians = ["Magic Mike", "Urli Geller", "Magicaaaaal"]
-show_magicians()
 make_great()
+show_magicians()
