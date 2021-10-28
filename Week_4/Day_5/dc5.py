@@ -1,0 +1,1 @@
+user_input = (print(sorted(input("type in any words seperated by a coma: ").split(","))))
