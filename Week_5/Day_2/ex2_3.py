@@ -20,12 +20,6 @@ class PetDog(Dog):
             print(f"{self.name}" + random.choice([" does a barrel roll", " stands on his back legs",
                                                   " shakes your hand", " plays dead"]))
 
-    def add(self, **kwargs):
-        for key, value in kwargs.items():
-            setattr(self, key, value)
-
-    add("Jack jack")
-
 
 pet_dog1 = PetDog("maria", 2, 20, True)
 pet_dog2 = PetDog("pete", 4, 21, True)
