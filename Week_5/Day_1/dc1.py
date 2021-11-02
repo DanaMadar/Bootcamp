@@ -20,7 +20,7 @@ class Farm:
         return sorted(self.animals.keys())
 
     def get_short_info(self):
-        str = "McDonald's farm has"
+        str = "McDonald's farm has: \n"
         animal_types = self.get_animal_types()
 
         for animal in animal_types:

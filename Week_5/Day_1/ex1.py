@@ -69,51 +69,46 @@
 
 
 # ex4
-class Zoo():
+class Zoo:
     def __init__(self, zoo_name):
-        self.animals = []
         self.name = zoo_name
-        self.groups = {}
+        self.animals = []
 
     def add_animal(self, new_animal):
-        if new_animal not in self.animals:
+        '''This method adds the new_animal 
+        to the animals list as long as it isn't already in the list.'''
+        if not new_animal in self.animals:
             self.animals.append(new_animal)
 
     def get_animals(self):
-        print(self.animals)
+        '''prints all the animals of the zoo.'''
+        for animal in self.animals:
+            print(animal)
 
     def sell_animal(self, animal_sold):
+        '''removes the animal from the list if it exists in the list.'''
         if animal_sold in self.animals:
-            self.animals.pop(self.animals.index(animal_sold))
+            self.animals.remove(animal_sold)
 
     def sort_animals(self):
-        sorted_animals = sorted(self.animals)
-        count = 1
-        while len(sorted_animals) > 0:
-            first_animal = sorted_animals.pop(0)
-            animals = [first_animal]
-            for animal in sorted_animals:
-                if animal[0] == first_animal[0]:
-                    animals.append(animal)
-                    sorted_animals.remove(animal)
-            if len(animals) == 1:
-                self.groups[count] = animals[0]
+        '''Create a method called sort_animals that sorts the animals
+         alphabetically and groups them together based on their first letter.'''
+        animals_lists = []
+        for animal in sorted(self.animals):
+            if not animals_lists:
+                animals_lists.append([animal])
+
             else:
-                self.groups[count] = animals
-            count += 1
+                if animal[0] == animals_lists[-1][0][0]:
+                    animals_lists[-1].append(animal)
+                else:
+                    animals_lists.append([animal])
 
-    def get_groups(self):
-        print(self.groups)
+            print(animals_lists)
 
 
-ramat_gan_safari = Zoo('ramat_gan_safari')
-ramat_gan_safari.add_animal('Ape')
-ramat_gan_safari.add_animal('Baboon')
-ramat_gan_safari.add_animal('Bear')
-ramat_gan_safari.add_animal('Cat')
-ramat_gan_safari.add_animal('Cougar')
-ramat_gan_safari.add_animal('Eel')
-ramat_gan_safari.add_animal('Emu')
+ramat_gan_safari = Zoo('Ramat Gan Safari')
+for animal in ['Cat', 'Cougar', "Baboon", 'Eel', 'Emu', "Baboon", "Baboon", "Baboon", "Bear", "Ape", ]:
+    ramat_gan_safari.add_animal(animal)
 
 ramat_gan_safari.sort_animals()
-ramat_gan_safari.get_groups()
