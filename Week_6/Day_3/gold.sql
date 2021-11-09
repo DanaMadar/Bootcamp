@@ -1,0 +1,14 @@
+--update students set birth_date = '1998-11-02' WHERE last_name = 'Simpson'
+--update students set first_name = 'Molly' WHERE first_name = 'Dolly'
+--delete from students where id = 4
+--select count(*) from students
+--select count(*) from students where birth_date > '2000-01-01'
+--alter table students add column math_grade real
+--update students set math_grade = 80 where id = 1
+--update students set math_grade = 90 where id in (2,4)
+--update students set math_grade = 40 where id = 6
+--select count(*) from students where math_grade > 83
+--insert into students (first_name, last_name, birth_date, math_grade)
+--values ('Omer', 'Simpson', '1998-11-02', 70)
+--select first_name, last_name, count(math_grade) as total_grade from students group by first_name, last_name
+--select sum(math_grade) as total_grades from students
