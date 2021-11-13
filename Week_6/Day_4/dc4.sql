@@ -20,16 +20,17 @@ create table orders (
 --values (1,4), (1, 3), (2, 1), (2,2)
 drop function total_price(int);
 
-CREATE or REPLACE FUNCTION total_price(o int) 
+CREATE or REPLACE FUNCTION total_price(x int) 
 RETURNS decimal AS $total$
 BEGIN
    RETURN(
    select sum(items.price) 
 	FROM orders 
 	join items on items.item_id = orders.item_id 
-	where orders.order_number = o
+	where orders.order_number = x
    );
 END;
 $total$ LANGUAGE plpgsql;
 
 select*from total_price(2)
+pip install psycopg2
