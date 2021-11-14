@@ -19,7 +19,7 @@ class Game:
             user_item = input('g. Play a new game\nx. Exit\n')
             if user_item in 'xX':
                 print('byeeeee')
-                print(self.result)
+                print(f'The result of the pleady games is : {self.result}')
                 exit()
             elif user_item.lower() == 'g':
                 user_item = input(
